@@ -1,16 +1,17 @@
-# simplified_dashboard.py
+# Twitter Sentiment Analysis Dashboard
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import os
 import re
+import io
 from collections import Counter
 from datetime import datetime
 
 # --- Page Config ---
 st.set_page_config(
-    page_title="Simplified Tweet Analysis Dashboard",
+    page_title="Twitter Sentiment Analysis Dashboard",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -54,8 +55,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='main-header'>📊 Tweet Analysis Dashboard</h1>", unsafe_allow_html=True)
-st.markdown("<p class='sub-header'>Analysis of Twitter data </p>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>📊 Twitter Sentiment Analysis Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<p class='sub-header'>Comprehensive Twitter Data Analysis using Apache Pig & Streamlit</p>", unsafe_allow_html=True)
 
 # --- File Paths ---
 # Assume files are in the same directory as the script
